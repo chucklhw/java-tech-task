@@ -1,4 +1,4 @@
-package com.rezdy.lunch.service;
+package com.rezdy.lunch.exception;
 
 public class ErrorResponse {
     private String errorMessage;
@@ -7,8 +7,7 @@ public class ErrorResponse {
         return errorMessage;
     }
 
-    public ErrorResponse setErrorMessage(String errorMessage) {
+    public void setErrorMessage(String errorMessage) {
         this.errorMessage = errorMessage;
-        return this;
     }
 }
