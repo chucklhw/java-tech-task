@@ -4,12 +4,12 @@
 3. Set MySql as production database in application.properties while set h2 as test database in application-test.properties
 
 #Refactor the structure of the project and database
-1. Create com.rezdy.lunch.entity for the entity classes.
-2. Transform the database logic from entityManager to JpaRepository in the com.rezdy.lunch.repository.
-3. Create com.rezdy.lunch.service.impl for the implementation of services, and the original com.rezdy.lunch.service is for interfaces.
+1. Create com.rezdy.lunch.entity package for the entity classes.
+2. Transform the database access logic from entityManager to JpaRepository in the com.rezdy.lunch.repository package.
+3. Create com.rezdy.lunch.service.impl package for the implementations of services, and the original com.rezdy.lunch.service package is for interfaces.
 4. Refactor the structure of tables to introduce ID as the primary key.
-5. In test folder, com.rezdy.lunch.controller is for controller-layer tests, com.rezdy.lunch.service.impl is for service-layer tests
-   and com.rezdy.lunch.repository is for data-access-layer tests.
+5. In test folder, the com.rezdy.lunch.controller package is for controller-layer tests, the com.rezdy.lunch.service.impl package is for service-layer tests,
+   and the com.rezdy.lunch.repository package is for data-access-layer tests.
    
 #Assumption
 1. Due to the fact that all foods have their expiry date, both BEST_BEFORE and USE_BY in the "ingredient" table have to be "NOT NULL".
